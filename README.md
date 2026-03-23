@@ -1,14 +1,35 @@
 # Stats and Public Health
-## Purpose
-I.	Clean, analyze, and present data pertaining to mosquito counts and West Nile Virus (WNV) prevalence among said mosquitos in the Chicago area. <br>
-II.	Statistically assess the suitability of the data to feed into regression models (both linear and logistic) that would predict the likelihood or presence of WNV.
+This project analyzes mosquito count and West Nile Virus (WNV) prevalance data from Chicago from the years 2008 to 2019.
 
-## Challenges
-I.	The data was raw, and organized by the time stamp (year, month, day, hour, minute, second) of the observation. Data organization by year or by month would make analysis and visualization more practical and useful. A technique called resampling had to be implemented to reorganize the data by year or month. <br>
-II.	The feature/predictor variables ultimately did not correlate highly enough with the target/predicted variable to justify building a useful regression model (linear or logistic). 
-## Learnings
-I.	Sometimes the data is simply not good enough to build a predictor model and better predictor variables need to be found and used. <br>
-II.	Exploratory data analysis (EDA) and data visualizations are useful for pattern revelation that could lead to practical countermeasures.
-## Collaborators
-I.	Dataset: mosquito_data.csv (see GitHub repository) <br>
-II.	Dataset: mosquito_data_part_2.csv (see GitHub repository)
+## Project Overview
+- Public health officials and the public benefit from better understanding the patterns of occurrence of WNV
+- The final product included graphs displaying mosquito and WNV patterns.
+
+## Business / Research Problem
+- Preventing infection of WNV will eliminate the associated health care costs and preserve life.
+- The analysis could direct authorities toward effective WNV prevention strategies.
+
+## Datasets
+- Datasets: mosquito_data, mosquito_data_part_2
+- 18,495 rows (17,633 after removing duplicates) / 13 columns, data types: int64, float64, object
+- Data was made available. The Dataset mosquito_data_part_2 was already cleaned.
+
+## Key Questions / Objectives
+- What factors impact the prevalance of mosquitos, differnt mosquito species, and WNV?
+- Can we predict the severity of a mosquito or WNV season?
+- What are the key trends in effective mosquito trapping?
+
+## Results & Insights
+- *Culex restuans* and *Culex pipiens* were the most prevalent mosquito species
+
+## Visualizations
+- Graphs of mosquito prevalance by year and by month, respectively, between 2008 and 2019.
+
+## Tools & Technologies
+- Python packages (e.g., pandas, numpy, seaborn, matplotlib)
+
+## Methodology
+- Data Cleaning & EDA: Counting and removing of missing and duplicate values, visualization of feature variables.
+- Feature Engineering: Data resampling to convert raw time stamp data into data organized by month and/or by year.
+- Modeling / Analysis: Correlation and cross-correlation analyses between the feature variables and between the feature and target variables. linear and logistic regression models.
+- Evaluation: Std err, p-value, correlation coefficient.
